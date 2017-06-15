@@ -1,4 +1,4 @@
-import printInReverseOrder from './printInReverseOrder/printInReverseOrder';
+import printInReverseOrder from '../src/printInReverseOrder/printInReverseOrder';
 
 test('printInReverseOrder', () => {
   expect(printInReverseOrder(211)).toBe('1 1 2');
