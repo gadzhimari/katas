@@ -8,4 +8,6 @@ test('isPrime', () => {
   expect(isPrime(4)).toBeFalsy();
   expect(isPrime(7)).toBeTruthy();
   expect(isPrime(10)).toBeFalsy();
+  expect(isPrime(33)).toBeFalsy();
+  expect(isPrime(97)).toBeTruthy();
 });

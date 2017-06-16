@@ -1,11 +1,6 @@
-export default (n) => {
-  if (n < 2) return false;
-  const iter = (acc, num) => {
-    if (num > Math.sqrt(n)) {
-      return (acc < 1);
-    }
-    const newAcc = (n % num === 0) ? acc + 1 : acc;
-    return iter(newAcc, num + 1);
-  }
-  return iter(0, 2);
+export default (num) => {
+  const iter = step => (step <= Math.sqrt(num)) ? 
+    ((num % step === 0) ? false : iter(step + 1)) : true;
+
+  return (num < 2) ? false : iter(2);
 }
