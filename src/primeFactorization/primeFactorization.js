@@ -1,0 +1,1 @@
+import { generatePrimeNumbers } from './math';
