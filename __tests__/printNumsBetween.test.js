@@ -1,4 +1,4 @@
-import 'printNumsBetween' from '../src/printNumsBetween/printNumsBetween';
+import printNumsBetween from '../src/printNumsBetween/printNumsBetween';
 
 test('printNumsBetween', () => {
   expect(printNumsBetween(10, 15)).toBe('10 11 12 13 14 15');
