@@ -1,19 +1,18 @@
 export default(list, item) => {
-  let low = 0;
-  let high = list.length - 1;
-  
-  while (low <= high) {
-    let mid = Math.floor((low + high) / 2);
-    let guess = list[mid];
-    if (guess === item) {
-      return mid;
+  const iter = (low, high) => {
+    if (high < low) {
+      return null;
     }
+    const mid = Math.floor((low + high) / 2);
+    const guess = list[mid];
     if (guess > item) {
-      high = mid - 1;
-    } else {
-      low = mid + 1;
+      return iter(low, mid - 1);
     }
+    if (guess < item) {
+      return iter(mid + 1, high);
+    }
+
+    return mid;
   }
-  
-  return null;
+  return iter(0, list.length - 1);
 }
