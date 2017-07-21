@@ -5,5 +5,5 @@ this algorithm with complexity of O(n + m). For this case you need pass
 the sorted arrays as arguments into the function.
 
 ```js
-mergeSort([1, 5, 10], [5, 6, 15, 100]) // [1, 5, 5, 6, 10, 15, 100]
+merge([1, 5, 10], [5, 6, 15, 100]) // [1, 5, 5, 6, 10, 15, 100]
 ```
