@@ -13,4 +13,13 @@ const merge = (left, right) => {
     : [b, ...merge(left, right.slice(1))];
 }
 
-export default merge;
+const mergeSort = (list) => {
+  const pivot = Math.floor(list.length / 2);
+  if (pivot === 0) {
+    return list;
+  }
+  const [left, right] = [list.slice(0, pivot), list.slice(pivot)];
+  return merge(mergeSort(left), mergeSort(right));
+}
+
+export default mergeSort;
