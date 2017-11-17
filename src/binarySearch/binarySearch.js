@@ -13,6 +13,6 @@ export default(list, item) => {
     }
 
     return mid;
-  }
+  };
   return iter(0, list.length - 1);
-}
+};

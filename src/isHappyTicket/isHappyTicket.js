@@ -1,4 +1,4 @@
-const sumDigits = (str) =>
+const sumDigits = str =>
   str.split('').reduce((sum, num) => sum + Number(num), 0);
 
 export default (num) => {
@@ -7,4 +7,4 @@ export default (num) => {
   const rightPart = str.substr(3);
 
   return sumDigits(leftPart) === sumDigits(rightPart);
-}
+};

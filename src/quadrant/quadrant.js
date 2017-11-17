@@ -1,3 +1,7 @@
+export const makePoint = (x, y) => ({ x, y });
+export const getX = point => point.x;
+export const getY = point => point.y;
+
 export const quadrant = (point) => {
   const x = getX(point);
   const y = getY(point);
@@ -13,8 +17,5 @@ export const quadrant = (point) => {
   }
 
   return null;
-}
+};
 
-export const makePoint = (x, y) => ({x, y});
-export const getX = point => point.x;
-export const getY = point => point.y;

@@ -1,3 +1,4 @@
+/* eslint-disable consistent-return */
 const ackermann = (m, n) => {
   if (m < 0 || n < 0) return;
   if (m === 0) {
@@ -5,7 +6,7 @@ const ackermann = (m, n) => {
   } else if (m > 0 && n === 0) {
     return ackermann(m - 1, 1);
   }
-  return ackermann(m - 1, ackermann(m, n - 1)); 
-}
+  return ackermann(m - 1, ackermann(m, n - 1));
+};
 
 export default ackermann;

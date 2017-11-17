@@ -11,7 +11,7 @@ const merge = (left, right) => {
   return a < b
     ? [a, ...merge(left.slice(1), right)]
     : [b, ...merge(left, right.slice(1))];
-}
+};
 
 const mergeSort = (list) => {
   const pivot = Math.floor(list.length / 2);
@@ -20,6 +20,6 @@ const mergeSort = (list) => {
   }
   const [left, right] = [list.slice(0, pivot), list.slice(pivot)];
   return merge(mergeSort(left), mergeSort(right));
-}
+};
 
 export default mergeSort;

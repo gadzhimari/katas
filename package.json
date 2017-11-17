@@ -5,7 +5,7 @@
   "scripts": {
     "test": "jest --colors",
     "build": "babel src --out-dir dist --source-maps inline",
-    "lint": "eslint",
+    "lint": "eslint -- src",
     "prepublish": "npm run build"
   },
   "jest": {

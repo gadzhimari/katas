@@ -10,5 +10,5 @@ export default (arr) => {
   }, new Map());
 
   return [...sortedArr.values()].reduce((acc, indices) =>
-    indices.length > 1 ? [...acc, indices] : acc, []);
-}
+    (indices.length > 1 ? [...acc, indices] : acc), []);
+};
