@@ -1,4 +1,4 @@
-import sortDeps from '..src/sortDeps/sortDeps';
+import sortDeps from '../src/sortDeps/sortDeps';
 
 test('should works', () => {
   const deps1 = {
