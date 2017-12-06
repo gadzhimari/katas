@@ -22,17 +22,18 @@
   },
   "homepage": "https://github.com/gadzhimari/katas#readme",
   "dependencies": {
-    "babel-preset-env": "*",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
     "babel-preset-stage-0": "*"
   },
   "devDependencies": {
-    "babel-cli": "*",
-    "babel-core": "*",
-    "babel-eslint": "*",
-    "babel-jest": "*",
-    "eslint": "*",
-    "eslint-config-airbnb": "*",
-    "eslint-plugin-import": "*",
-    "jest": "*"
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.3",
+    "babel-jest": "^21.2.0",
+    "eslint": "^4.12.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "jest": "^21.2.1"
   }
 }
